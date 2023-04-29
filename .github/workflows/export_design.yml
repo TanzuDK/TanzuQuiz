@@ -1,6 +1,13 @@
 name: Render .drawio files
 
-on: [push]
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # You can even set it to run only when TechDocs related files are updated.
+    paths:
+      - "design.drawio"
+      - ".github/workflows/export_design.yml"
 
 jobs:
   render_drawio:

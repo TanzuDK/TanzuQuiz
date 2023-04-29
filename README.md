@@ -1,5 +1,7 @@
 # Tanzu Quiz
 
+![Design](design.svg)
+
 ## Table of Contents
 
 - [About](#about)
