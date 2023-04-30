@@ -1,0 +1,5 @@
+site_name: Tanzu Quiz Documentation
+nav:
+  - Database: db.md
+plugins:
+  - techdocs-core
