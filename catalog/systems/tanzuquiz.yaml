@@ -6,8 +6,8 @@ metadata:
   annotations:
     backstage.io/techdocs-ref: dir:.
   tags:
-    - Quiz
-    - Postgres
+    - quiz
+    - postgres
   links:
     - url: https://frontend.default.vmlab.tanzu.dk/
       title: Internal App Link
