@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tanzuquiz-db
+  description: DB for TanzuQuiz data
+  links:
+    - url: https://docs.vmware.com/en/VMware-SQL-with-Postgres-for-Kubernetes/index.html
+      title: VMware Postgres operator documentation
+      icon: dashboard
+spec:
+  type: database
+  lifecycle: production
+  owner: denmark-team
+  system: tanzuquiz

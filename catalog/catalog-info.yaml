@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: tanzu-quiz-info
+  description: "Catalog for the 'Tanzu Quiz' application"
+spec:
+  targets:
+    - ./systems/tanzuquiz.yaml
+    - ./resource/db.yaml

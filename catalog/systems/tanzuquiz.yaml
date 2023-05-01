@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: tanzuquiz
+  description: Tanzu Quiz Demo Application
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - Quiz
+    - Postgres
+  links:
+    - url: https://frontend.default.vmlab.tanzu.dk/
+      title: Internal App Link
+      icon: dashboard
+    - url: https://tanzutrends.tanzu.dk
+      title: External App Link
+      icon: dashboard
+spec:
+  owner: denmark-team
+  domain: tap-gui-domain
