@@ -1,7 +1,7 @@
 apiVersion: carto.run/v1alpha1
 kind: Workload
 metadata:
-  name: scrape
+  name: api
   labels:
     apps.tanzu.vmware.com/workload-type: server
     app.kubernetes.io/part-of: tanzuquiz
