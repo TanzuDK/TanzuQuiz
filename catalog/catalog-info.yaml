@@ -7,3 +7,4 @@ spec:
   targets:
     - ./systems/tanzuquiz.yaml
     - ./resource/db.yaml
+    - ./catalog/Component/api.yaml

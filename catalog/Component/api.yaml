@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: api
+  description: The api for the Tanzu Quiz Application
+  tags:
+    - golang
+  links:
+    - url: https://frontend.default.vmlab.tanzu.dk/
+      title: Internal App Link
+      icon: dashboard
+    - url: https://tanzutrends.tanzu.dk
+      title: External App Link
+      icon: dashboard
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=tanzuquiz
+spec:
+  type: Application
+  lifecycle: production
+  owner: denmark-team
+  system: tanzuquiz
+  dependsOn:
+    - resource:default/tanzuquiz-db
