@@ -15,7 +15,7 @@ spec:
         name: tanzuquiz-db-secret
   source:
     git:
-      url: https://github.com/TanzuDK/TanzuTrends.git
+      url: https://github.com/TanzuDK/TanzuQuiz.git
       ref:
         branch: main
     subPath: api
