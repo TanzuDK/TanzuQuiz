@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/rhjensen79/files2env"
+)
 
 func main() {
-	fmt.Println("Hi World")
+	files2env.Import("/bindings/tanzuquiz-db")
+
 }
