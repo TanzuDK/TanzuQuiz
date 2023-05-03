@@ -8,7 +8,7 @@ metadata:
   annotations:
     backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=tanzuquiz
 spec:
-  type: Application
+  type: api
   lifecycle: production
   owner: denmark-team
   system: tanzuquiz
