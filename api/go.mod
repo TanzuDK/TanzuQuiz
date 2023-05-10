@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/gin-gonic/gin v1.9.0
-	github.com/rhjensen79/files2env v0.7.5
+	github.com/rhjensen79/files2env v0.7.7
 )
 
 require (
