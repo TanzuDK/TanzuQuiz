@@ -3,5 +3,9 @@
 package models
 
 type Users_Post struct {
-	email string `gorm:"not null" json:"content,omitempty"`
+	email     	uint   `json:"email" gorm:"primary_key"`
+	Date		string	`json:"date`
+	Name		name	`json:"name`
+	Title  		string `json:"title"`
+	Company 	string `json:"company"`
 }

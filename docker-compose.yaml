@@ -12,6 +12,8 @@ services:
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
+    depends_on:
+      - postgres
     restart: always
     env_file:
       - ./local_pgadmin.env
@@ -19,6 +21,17 @@ services:
       - pgadmin-data:/var/lib/pgadmin
     ports:
       - "5050:80"
+  api:
+    container_name: api
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - 8080:8080
+    env_file:
+      - ./local_db.env
 volumes:
   db:
   pgadmin-data:
