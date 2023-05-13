@@ -7,6 +7,7 @@ sqlcredentials:
 start:
 	@docker compose up -d
 	@echo "login to pgadmin using http://localhost:5050"
+	@echo "Test api using http://localhost:8080/api/healthchecks"
 
 stop:
 	@docker compose down
