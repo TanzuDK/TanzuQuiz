@@ -4,9 +4,7 @@ go 1.19
 
 require (
 	github.com/gin-gonic/gin v1.9.0
-	github.com/google/uuid v1.3.0
 	github.com/rhjensen79/files2env v0.7.7
-	github.com/wpcodevo/golang-gorm-postgres v0.0.0-20230325205328-be47b35ea9b4
 	gorm.io/driver/postgres v1.5.0
 	gorm.io/gorm v1.25.1
 )
