@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"tanzuquiz/controllers"
 	"tanzuquiz/initializers"
 
 	"tanzuquiz/models"
@@ -25,6 +26,10 @@ func main() {
 		message := "Welcome to Golang with Gorm and Postgres"
 		ctx.JSON(http.StatusOK, gin.H{"status": "success", "message": message})
 	})
+
+	router.GET("/users", controllers.FindUsers)
+	router.GET("/users/:email", controllers.FindUser)
+	router.POST("/users", controllers.CreateUser)
 
 	log.Fatal(server.Run())
 }
