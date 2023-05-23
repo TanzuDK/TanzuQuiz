@@ -1,12 +1,12 @@
 services:
   postgres:
     image: postgres:14
-    restart: always
+    restart: unless-stopped
     container_name: db
     ports:
       - 5432:5432
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      test: [ "CMD-SHELL", "pg_isready -d quiz -U tanzu" ]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -20,7 +20,7 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
-    restart: always
+    restart: unless-stopped
     env_file:
       - ./local_pgadmin.env
     volumes:
@@ -37,7 +37,7 @@ services:
         condition: service_healthy
     ports:
       - 8080:8080
-    restart: always
+    restart: unless-stopped
     healthcheck:
       test: curl --fail http://localhost:8080/api/healthchecker || exit 1
       interval: 60s
