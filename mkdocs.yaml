@@ -1,5 +1,6 @@
 site_name: Tanzu Quiz Documentation
 nav:
+  - The Application: index.md
   - Database: db.md
   - API: api.md
 plugins:
