@@ -8,4 +8,4 @@ spec:
     - ./systems/tanzuquiz.yaml
     - ./resource/db.yaml
     - ./Component/api.yaml
-    - ./Component/frontend.yaml
+    - ./Component/quiz-frontend.yaml

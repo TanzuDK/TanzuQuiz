@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: frontend
+  name: quiz-frontend
   description: The frontend for the Tanzu Quiz Application
   tags:
     - golang
