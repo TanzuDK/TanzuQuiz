@@ -2,7 +2,7 @@
 let xhr = new XMLHttpRequest();
 
 // Set the request method and URL
-xhr.open("GET", "http://localhost:8080/api/users");
+xhr.open("GET", "http://api:8080/api/users");
 
 // Define what to do when the request is successful
 xhr.onload = function () {

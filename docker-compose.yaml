@@ -46,6 +46,17 @@ services:
       timeout: 10s
     env_file:
       - ./local_db.env
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    ports:
+      - 8888:8888
+    restart: unless-stopped
+
 volumes:
   db:
   pgadmin-data:
